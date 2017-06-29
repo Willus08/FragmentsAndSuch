@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.fragmentsandsuch.MainActivity">
+
+
+    <Button
+        android:id="@+id/btnBlueFlag"
+        android:text="blueflag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="blueflag"/>
+    <Button
+        android:id="@+id/RedbtnFlag"
+        android:text="redflag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="redflag"/>
+    <Button
+        android:id="@+id/btnYellowFlag"
+        android:text="yellow flag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="yellowflag"/>
+    <TextView
+        android:id="@+id/tvRedOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/flFirstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/SecondFragment"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></FrameLayout>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Red Fragments"
+        android:onClick="removeRedFragments"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Blue Fragments"
+        android:onClick="removeBlueFragments"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Yellow Fragments"
+        android:onClick="removeYellowFragments"/>
+
+</LinearLayout>
